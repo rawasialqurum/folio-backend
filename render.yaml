@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: folio-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: ALLOWED_ORIGIN
+        value: https://rawasialqurum.github.io
+    autoDeploy: true

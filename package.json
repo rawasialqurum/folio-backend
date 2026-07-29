@@ -1,0 +1,28 @@
+{
+  "name": "folio-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Folio - PDF toolkit (merge, split, rotate, compress, convert, security)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "pdf-lib": "^1.17.1",
+    "archiver": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "uuid": "^9.0.1",
+    "tesseract.js": "^5.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
